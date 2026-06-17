@@ -1574,6 +1574,42 @@ data/N=500/0_900/*
 !data/N=500/0_890/dat_final/
 !data/N=500/0_900/dat_final/
 
+# Permitir dat msd
+!data/N=500/0_010/dat_msd/
+!data/N=500/0_050/dat_msd/
+!data/N=500/0_100/dat_msd/
+!data/N=500/0_200/dat_msd/
+!data/N=500/0_300/dat_msd/
+!data/N=500/0_400/dat_msd/
+!data/N=500/0_500/dat_msd/
+!data/N=500/0_600/dat_msd/
+!data/N=500/0_700/dat_msd/
+!data/N=500/0_710/dat_msd/
+!data/N=500/0_720/dat_msd/
+!data/N=500/0_730/dat_msd/
+!data/N=500/0_740/dat_msd/
+!data/N=500/0_750/dat_msd/
+!data/N=500/0_760/dat_msd/
+!data/N=500/0_770/dat_msd/
+!data/N=500/0_780/dat_msd/
+!data/N=500/0_790/dat_msd/
+!data/N=500/0_800/dat_msd/
+!data/N=500/0_810/dat_msd/
+!data/N=500/0_820/dat_msd/
+!data/N=500/0_830/dat_msd/
+!data/N=500/0_840/dat_msd/
+!data/N=500/0_843/dat_msd/
+!data/N=500/0_845/dat_msd/
+!data/N=500/0_848/dat_msd/
+!data/N=500/0_850/dat_msd/
+!data/N=500/0_852/dat_msd/
+!data/N=500/0_855/dat_msd/
+!data/N=500/0_860/dat_msd/
+!data/N=500/0_870/dat_msd/
+!data/N=500/0_880/dat_msd/
+!data/N=500/0_890/dat_msd/
+!data/N=500/0_900/dat_msd/
+
 # Permitir checkpoints
 !data/N=500/0_010/checkpoints/
 !data/N=500/0_050/checkpoints/
