@@ -15,7 +15,7 @@ def process_and_save_msd(num_cells, max_step, dens, step, rng_seed, max_aspect_r
     for seed in rng_seed:
         msd_time_series = []
         
-        # Read the first step (CORREGIDO: Anisotropic_Grosmann)
+        # Read the first step
         file_t0 = (
             f"data/{num_cells_folder}/{densfolder}/dat/culture_initial_number_of_cells={num_cells}_density={dens}_"
             f"force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_"
@@ -23,7 +23,6 @@ def process_and_save_msd(num_cells, max_step, dens, step, rng_seed, max_aspect_r
         )
         
         if not os.path.exists(file_t0):
-            print(f"No existe: {file_t0}")
             continue 
             
         df_t0 = pd.read_csv(file_t0)
@@ -51,7 +50,7 @@ def process_and_save_msd(num_cells, max_step, dens, step, rng_seed, max_aspect_r
                 # Calculate the displacement for the previous frame
                 delta_r = r_curr_wrapped - r_prev_wrapped
                 
-                # If delta > L/2, it is because the cell jumped.
+                # Unwrap the periodic boundary conditions
                 mask_x = np.abs(delta_r[:, 0]) > half_L
                 delta_r[mask_x, 0] -= np.sign(delta_r[mask_x, 0]) * L
                 
@@ -62,24 +61,20 @@ def process_and_save_msd(num_cells, max_step, dens, step, rng_seed, max_aspect_r
                 if tic > 0:
                     r_unwrapped += delta_r
                 
-                # Calculate the msd with respect to the origin
+                # Calculate the msd with respect to the origin (GLOBAL)
                 sq_disp = np.sum((r_unwrapped - r0_unwrapped)**2, axis=1)
-                
-                # Phenotype filter
-                is_round = np.isclose(df_tic["aspect_ratio"], 1.0)
-                is_elongated = ~is_round
-                
                 msd_global = np.mean(sq_disp)
-                msd_round = np.mean(sq_disp[is_round]) if is_round.sum() > 0 else np.nan
-                msd_elongated = np.mean(sq_disp[is_elongated]) if is_elongated.sum() > 0 else np.nan
+                
+                # We still count phenotypes to know the state of the system
+                is_round = np.isclose(df_tic["aspect_ratio"], 1.0)
+                n_round = is_round.sum()
+                n_elongated = num_cells - n_round
                 
                 msd_time_series.append({
                     "step": tic,
                     "msd_global": msd_global,
-                    "msd_round": msd_round,
-                    "msd_elongated": msd_elongated,
-                    "n_round": is_round.sum(),
-                    "n_elongated": is_elongated.sum()
+                    "n_round": n_round,
+                    "n_elongated": n_elongated
                 })
                 
                 # Update memory for next iteration
@@ -92,7 +87,6 @@ def process_and_save_msd(num_cells, max_step, dens, step, rng_seed, max_aspect_r
 
 
 # Main Script
-
 density_list = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.71, 0.72, 0.73,
                 0.74, 0.75, 0.76, 0.77, 0.78, 0.79, 0.8, 0.81, 0.82, 0.83, 0.84, 
                 0.85, 0.86, 0.87, 0.88, 0.89, 0.9]
