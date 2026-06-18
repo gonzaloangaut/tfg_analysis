@@ -1,6 +1,6 @@
-# oncostreams_analysis
+# tfg_analysis
 
-Software for analyzing data from oncostream simulations. The repository contains raw simulation data, processing scripts, and visualization notebooks to study clustering, order parameters, and phenotypic transitions.
+Software for analyzing data from oncostream simulations using the code of the tfg. The repository contains raw simulation data, processing scripts, and visualization notebooks to study clustering, order parameters, and phenotypic transitions.
 
 ## Repository structure
 
@@ -21,19 +21,14 @@ There are two types of scripts used to analyze the data:
 
 ### Python scripts (`.py`)
 Generate lighter, intermediate data to simplify the analysis:
-- **`dat_clusters.py`**:  
-  Generates clustering data. For every file in `dat_labels`, it outputs a new file with the number of clusters and the size of the largest cluster for each step and seed.  
-  Also generates `.csv` files with all cluster sizes to study the final cluster size distribution.  
+- **`dat_msd.py`**:  
+  Generates msd data. 
 - **`dat_ph_aspect_ratio.py`**:  
   Calculates and saves the quantity of each phenotype for every step and seed.
 
 ### Jupyter notebooks (`.ipynb`)
 Used to visualize and analyze the processed data:
-- **`analysis_clusters.ipynb`**:  
-  Studies clustering dynamics. First analyzes the time evolution of the number of clusters and the largest cluster size, then the final cluster size distribution for each density.  
 - **`analysis_order_parameters.ipynb`**:  
-  Studies polar and nematic order parameters. Plots their evolution in time and the steady-state values versus density.  
-- **`analysis_phenotypes.ipynb`**:  
-  Analyzes phenotype evolution over time and steady-state values versus density.  
-- **`analysis_local_op.ipynb`**:  
-  Analyzes local order parameter.
+  Studies polar and nematic order parameters together with phenotype metrics. Plots their evolution in time and the steady-state values versus density.
+- **`analysis_msd.ipynb`**:  
+  Studies the msd to identify the distinct macroscopic dynamic regimes.  
