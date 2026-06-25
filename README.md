@@ -11,7 +11,9 @@ Software for analyzing data from oncostream simulations using the code of the tf
   - Example files are kept only for reference due to the large amount of data.  
   - **`steady_state_images/`**: A folder with images of the steady state for each density is also included.
 
-- **`graphs/`**: Stores all the figures generated during the analysis. Contains figures grouped by the number of cells, as well as comparison plots across different system sizes..
+- **`graphs/`**: Stores all the figures generated during the analysis. Contains figures grouped by the number of cells, as well as comparison plots across different system sizes.
+
+- **`results/`**: Stores all the processed data.
 
 - **`other_scripts/`**: Contains ideas and draft scripts for potential future use.
 
@@ -23,8 +25,6 @@ There are two types of scripts used to analyze the data:
 Generate lighter, intermediate data to simplify the analysis:
 - **`dat_msd.py`**:  
   Generates msd data. 
-- **`dat_ph_aspect_ratio.py`**:  
-  Calculates and saves the quantity of each phenotype for every step and seed.
 
 ### Jupyter notebooks (`.ipynb`)
 Used to visualize and analyze the processed data:
