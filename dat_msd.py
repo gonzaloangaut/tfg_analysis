@@ -87,10 +87,8 @@ def process_and_save_msd(num_cells, max_step, dens, step, rng_seed, max_aspect_r
 
 
 # Main Script
-density_list = [0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.71, 0.72, 0.73,
-                0.74, 0.75, 0.76, 0.77, 0.78, 0.79, 0.8, 0.81, 0.82, 0.83, 0.84, 
-                0.85, 0.86, 0.87, 0.88, 0.89, 0.9]
-nc = 500
+density_list = [0.7, 0.75, 0.8, 0.81, 0.82, 0.83, 0.84, 0.85, 0.86, 0.87, 0.88, 0.89, 0.9]
+nc = 1_000
 max_step = 80_000
 step = 100
 number_of_realizations = 64

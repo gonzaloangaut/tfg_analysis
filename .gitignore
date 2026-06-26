@@ -1235,6 +1235,7 @@ data/N=1_000/0_855/*
 data/N=1_000/0_860/*
 data/N=1_000/0_870/*
 data/N=1_000/0_880/*
+data/N=1_000/0_890/*
 data/N=1_000/0_900/*
 
 # Permitir dat finales
@@ -1261,7 +1262,35 @@ data/N=1_000/0_900/*
 !data/N=1_000/0_860/dat_final/
 !data/N=1_000/0_870/dat_final/
 !data/N=1_000/0_880/dat_final/
+!data/N=1_000/0_890/dat_final/
 !data/N=1_000/0_900/dat_final/
+
+# Permitir dat msd
+!data/N=1_000/0_400/dat_msd/
+!data/N=1_000/0_500/dat_msd/
+!data/N=1_000/0_600/dat_msd/
+!data/N=1_000/0_700/dat_msd/
+!data/N=1_000/0_750/dat_msd/
+!data/N=1_000/0_760/dat_msd/
+!data/N=1_000/0_770/dat_msd/
+!data/N=1_000/0_780/dat_msd/
+!data/N=1_000/0_790/dat_msd/
+!data/N=1_000/0_800/dat_msd/
+!data/N=1_000/0_810/dat_msd/
+!data/N=1_000/0_820/dat_msd/
+!data/N=1_000/0_830/dat_msd/
+!data/N=1_000/0_840/dat_msd/
+!data/N=1_000/0_843/dat_msd/
+!data/N=1_000/0_845/dat_msd/
+!data/N=1_000/0_848/dat_msd/
+!data/N=1_000/0_850/dat_msd/
+!data/N=1_000/0_852/dat_msd/
+!data/N=1_000/0_855/dat_msd/
+!data/N=1_000/0_860/dat_msd/
+!data/N=1_000/0_870/dat_msd/
+!data/N=1_000/0_880/dat_msd/
+!data/N=1_000/0_890/dat_msd/
+!data/N=1_000/0_900/dat_msd/
 
 # Permitir checkpoints
 !data/N=1_000/0_400/checkpoints/
@@ -1287,6 +1316,7 @@ data/N=1_000/0_900/*
 !data/N=1_000/0_860/checkpoints/
 !data/N=1_000/0_870/checkpoints/
 !data/N=1_000/0_880/checkpoints/
+!data/N=1_000/0_890/checkpoints/
 !data/N=1_000/0_900/checkpoints/
 
 # PERMITIR carpetas con las imagenes de estado estacionario
@@ -1313,6 +1343,7 @@ data/N=1_000/0_900/*
 !data/N=1_000/0_860/steady_state_images/
 !data/N=1_000/0_870/steady_state_images/
 !data/N=1_000/0_880/steady_state_images/
+!data/N=1_000/0_890/steady_state_images/
 !data/N=1_000/0_900/steady_state_images/
 
 # PERMITIR carpetas con ovito
@@ -1339,6 +1370,7 @@ data/N=1_000/0_900/*
 !data/N=1_000/0_860/ovito_final/
 !data/N=1_000/0_870/ovito_final/
 !data/N=1_000/0_880/ovito_final/
+!data/N=1_000/0_890/ovito_final/
 !data/N=1_000/0_900/ovito_final/
 
 # PERMITIR carpetas intermedias
@@ -1365,6 +1397,7 @@ data/N=1_000/0_900/*
 !data/N=1_000/0_860/dat/
 !data/N=1_000/0_870/dat/
 !data/N=1_000/0_880/dat/
+!data/N=1_000/0_890/dat/
 !data/N=1_000/0_900/dat/
 
 !data/N=1_000/0_400/dat_order_parameters/
@@ -1390,6 +1423,7 @@ data/N=1_000/0_900/*
 !data/N=1_000/0_860/dat_order_parameters/
 !data/N=1_000/0_870/dat_order_parameters/
 !data/N=1_000/0_880/dat_order_parameters/
+!data/N=1_000/0_890/dat_order_parameters/
 !data/N=1_000/0_900/dat_order_parameters/
 
 # Ignorar todo dentro de dat/
@@ -1416,6 +1450,7 @@ data/N=1_000/0_855/dat/*
 data/N=1_000/0_860/dat/*
 data/N=1_000/0_870/dat/*
 data/N=1_000/0_880/dat/*
+data/N=1_000/0_890/dat/*
 data/N=1_000/0_900/dat/*
 
 # EXCEPTUAR archivos específicos en dat/
@@ -1442,6 +1477,7 @@ data/N=1_000/0_900/dat/*
 !data/N=1_000/0_860/dat/culture_initial_number_of_cells=1000_density=0.86_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 !data/N=1_000/0_870/dat/culture_initial_number_of_cells=1000_density=0.87_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 !data/N=1_000/0_880/dat/culture_initial_number_of_cells=1000_density=0.88_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
+!data/N=1_000/0_890/dat/culture_initial_number_of_cells=1000_density=0.89_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 !data/N=1_000/0_900/dat/culture_initial_number_of_cells=1000_density=0.9_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 
 # Ignorar todo dentro de dat_order_parameters/
@@ -1468,6 +1504,7 @@ data/N=1_000/0_855/dat_order_parameters/*
 data/N=1_000/0_860/dat_order_parameters/*
 data/N=1_000/0_870/dat_order_parameters/*
 data/N=1_000/0_880/dat_order_parameters/*
+data/N=1_000/0_890/dat_order_parameters/*
 data/N=1_000/0_900/dat_order_parameters/*
 
 # EXCEPTUAR archivos específicos en dat_order_parameters/
@@ -1494,6 +1531,7 @@ data/N=1_000/0_900/dat_order_parameters/*
 !data/N=1_000/0_860/dat_order_parameters/op_culture_initial_number_of_cells=1000_density=0.86_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 !data/N=1_000/0_870/dat_order_parameters/op_culture_initial_number_of_cells=1000_density=0.87_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 !data/N=1_000/0_880/dat_order_parameters/op_culture_initial_number_of_cells=1000_density=0.88_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
+!data/N=1_000/0_890/dat_order_parameters/op_culture_initial_number_of_cells=1000_density=0.89_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 !data/N=1_000/0_900/dat_order_parameters/op_culture_initial_number_of_cells=1000_density=0.9_force=Anisotropic_Grosmann_k=3.33_gamma=3_With_Noise_eta=0.033_With_Shrinking_rng_seed=7713914261614_step=00000.dat
 
 
